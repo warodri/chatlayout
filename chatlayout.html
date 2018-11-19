@@ -1,0 +1,185 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<title>Complex HTML Layout</title>
+	<style>
+		body {
+			padding:0px;
+			margin:0px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.mainContainer {
+			position:absolute;
+			background-color: aliceblue;
+			top:0px;
+			left:0px;
+			bottom:0px;
+			right:0px;
+		}
+		.mainHeader {
+			position:absolute;
+			left:0px;
+			right:0px;
+			height:40px;
+			background-color: antiquewhite;
+		}
+		.leftColumn {
+			position:absolute;
+			background-color: aqua;
+			left:0px;
+			top:40px;
+			right:50vw;
+			bottom:40px;
+		}
+		.rightColumn {
+			position:absolute;
+			background-color: aquamarine;
+			top:40px;
+			left:50vw;
+			right:0px;
+			bottom:40px;
+		}
+		.mainFooter {
+			position: absolute;
+			background-color: azure;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			height:40px;
+		}
+		.leftHeader {
+			position: absolute;
+			background-color: beige;
+			left:0px;
+			right:0px;
+			height:40px;
+		}
+		.rightHeader {
+			position: absolute;
+			background-color: bisque;
+			left:0px;
+			top:0px;
+			right:0px;
+			height:40px;
+		}
+		.leftFooter {
+			position: absolute;
+			background-color: blue;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			height:40px;
+		}
+		.rightFooter {
+			position: absolute;
+			background-color: blueviolet;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			height:40px;
+		}
+		.leftContent {
+			position: absolute;
+			top:40px;
+			left:0px;
+			right:0px;
+			bottom:40px;
+			overflow-y:auto;
+			overflow-x:hidden;
+		}
+		.rightContent {
+			position: absolute;
+			top:40px;
+			left:0px;
+			right:0px;
+			bottom:40px;
+			overflow-y:auto;
+			overflow-x:hidden;
+		}
+		@media all and (max-width:400px)  {
+			body {
+				font-size:13px;
+			}
+			.leftColumn	{
+				display: none;
+			}
+			.rightColumn {
+				left:0px;
+
+			}
+		}
+	</style>
+	<body>
+		<div class="mainContainer">
+			<div class="mainHeader">Main Header</div>
+			<div class="leftColumn">
+				<div class="leftHeader">Left Header</div>
+				<div class="leftContent">
+					<ul>
+						<li>FIRST ELEMENT</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>element</li>
+						<li>LAST ELEMENT</li>
+					</ul>
+				</div>
+				<div class="leftFooter">Left Footer</div>
+			</div>
+			<div class="rightColumn">
+				<div class="rightHEader">Right Header</div>
+				<div class="rightContent">
+					<ul>
+							<li>FIRST ELEMENT</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>element</li>
+							<li>LAST ELEMENT</li>
+						</ul>
+				</div>
+				<div class="rightFooter">Right Footer</div>
+			</div>
+			<div class="mainFooter">Main Footer</div>
+		</div>
+	</body>
+</html>
